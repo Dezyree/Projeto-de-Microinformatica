@@ -5,16 +5,6 @@ body {
 }
 
 
-
-a  {
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
-
-nav a:hover {
-  color: #000000;
-}
-
 .menu ul {
   list-style: none;
   margin: 0;
@@ -41,7 +31,18 @@ nav a:hover {
   background-color: #CEA27D;
 }
 
+a  {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+
 h4 {
   color: rgba(0, 0, 0, 0.623);
   text-align: center;
 }
+
