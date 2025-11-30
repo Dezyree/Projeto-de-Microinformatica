@@ -1,3 +1,4 @@
+
 :root {
     --cor-principal: #8B4513; 
     --cor-fundo: ##CEA27D; 
@@ -189,3 +190,159 @@ header {
     background-color: #b68f72;
 }
 
+
+:root {
+    --cor-principal: #8B4513; 
+    --cor-fundo: ##CEA27D; 
+    --cor-destaque: #DAA520; 
+    --cor-texto: #333;
+}
+
+body {
+    font-family: Comic Sans MS, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0 20px 40px 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--cor-principal);
+    text-align: center;
+    font-size: 4.0em;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--cor-destaque);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: var(--cor-principal);
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+p, li {
+    font-size: 1.1em;
+}
+
+strong {
+    color: var(--cor-principal);
+}
+
+.menu {
+    background-color: var(--cor-principal);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-h {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-h li {
+    padding: 15px 25px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--cor-texto-claro);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 15px 0;
+}
+
+.link:hover {
+    color: var(--cor-destaque);
+}
+
+div {
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+h3 a {
+    color: var(--cor-destaque);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+h3 a:hover {
+    color: var(--cor-principal);
+}
+
+@media (max-width: 768px) {
+    .menu-h {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-h li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-h li:last-child {
+        border-bottom: none;
+    }
+}
+
+
+.menu a:hover {
+  background-color: #CEA27D;
+}
+
+a  {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+nav a:hover {
+  color: #000000;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  flex: 1;
+}
+
+.menu a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: #b89171;
+  transition: background-color 0.3s;
+}
+div h3 p {
+    color: #000000;
+    
+
+}
