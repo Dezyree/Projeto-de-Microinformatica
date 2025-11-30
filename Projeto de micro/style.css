@@ -1,9 +1,16 @@
-body {
-  background-color: #a18181;
-  font-family: Comic Sans MS, sans-serif;
-  margin: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+
+body {
+  background-color: #fff8f0;
+  font-family: Arial, sans-serif;
+  margin: 0;  
+  height: 100%;
+}
 
 .menu ul {
   list-style: none;
@@ -45,4 +52,5 @@ h4 {
   color: rgba(0, 0, 0, 0.623);
   text-align: center;
 }
+
 
