@@ -153,3 +153,39 @@ div h3 p {
     
 
 }
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+}
+
+header {
+    width: 100%;
+    background-color: #b68f72;
+}
+
