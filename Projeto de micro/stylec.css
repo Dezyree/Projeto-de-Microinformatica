@@ -342,3 +342,12 @@ nav a:hover {
 }
 
 
+.rodape {
+  background-color: #b89171d5;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
