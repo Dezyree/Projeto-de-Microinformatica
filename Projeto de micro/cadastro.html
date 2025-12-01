@@ -81,7 +81,44 @@
         </section>
     </main>
 
+ <script>
+        const cepInput = document.getElementById('cep');
+        const enderecoInput = document.getElementById('endereco');
+        const bairroInput = document.getElementById('bairro');
+        const cidadeInput = document.getElementById('cidade');
+        const estadoInput = document.getElementById('estado');
 
+        cepInput.addEventListener('blur', () => {
+            const cep = cepInput.value.replace(/\D/g, '');
+            if (cep.length === 8) {
+                fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (!data.erro) {
+                            enderecoInput.value = data.logradouro;
+                            bairroInput.value = data.bairro;
+                            cidadeInput.value = data.localidade;
+                            estadoInput.value = data.uf;
+                        } else {
+                            alert('CEP não encontrado.');
+                            enderecoInput.value = '';
+                            bairroInput.value = '';
+                            cidadeInput.value = '';
+                            estadoInput.value = '';
+                        }
+                    })
+                    .catch(() => alert('Erro ao buscar CEP.'));
+            } else {
+                alert('CEP inválido.');
+            }
+        });
+
+        document.getElementById('cadastroForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Cadastro realizado com sucesso!');
+           
+        });
+    </script>
     
      <footer class="rodape">
     <div>
