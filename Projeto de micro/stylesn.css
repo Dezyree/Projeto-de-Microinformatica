@@ -343,6 +343,14 @@ nav a:hover {
 }
 div h3 p {
     color: #000000;
-    
+}
 
+.rodape {
+  background-color: #b89171d5;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
