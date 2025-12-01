@@ -112,6 +112,30 @@ h2 {
   color: #2b231f;
 }
 
+.opcoes {
+  display: block;
+  background: #f0859c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border-top: 4px solid #be687b;
+}
+
+.preco {
+  display: grid;
+  background: #df9253c0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border-top: 4px solid #e27e2dcc;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px #00000033;
+}
 
 .rodape {
    background-color: #b69070f6;
